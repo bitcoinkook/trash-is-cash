@@ -1,11 +1,11 @@
-# Trash is Cash
+# Sats for Trash
 
 > An honest, verifiable, replicable protocol for rewarding real-world positive action.
 
 Natural spaces cleanup outings logged on Nostr, paid in sats. 
 
 🔗 **Live page:** *(coming soon)*
-📡 **Nostr hashtag:** `#TrashIsCash`
+📡 **Nostr hashtag:** `#sats4trash`
 
 ---
 
@@ -47,7 +47,7 @@ The protocol is designed to be forked. To run your own version:
 4. Replace `hero.png` with your own image
 5. Adjust intro text and Lightning address to your context
 6. Enable GitHub Pages on your fork
-7. Post your first outing on Nostr with the `#TrashIsCash` hashtag
+7. Post your first outing on Nostr with the `#sats4trash` hashtag
 
 You don't need to be doing beach cleanups specifically. The protocol works for any honest, physical, repeatable action that can be documented and published on Nostr.
 
