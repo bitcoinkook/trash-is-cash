@@ -4,7 +4,7 @@
 
 Natural spaces cleanup outings logged on Nostr, paid in sats. 
 
-🔗 **Live page:** *(coming soon)*
+🔗 **Live page:** *www.satsfortrash.com*
 📡 **Nostr hashtag:** `#sats4trash`
 
 ---
