@@ -489,7 +489,7 @@
     </div>
   </div>
   <div class="kook-hook" data-lang-en="">
-    <p class="kook-hook-lead">Started picking up trash in the morning to replace the joint I used to start the day with. Now I get paid in sats for it.</p>
+    <p class="kook-hook-lead">Started picking up trash in the morning to replace the marijuana cigarette I used to start the day with. Now I get paid in sats for it.</p>
     <button class="kook-intro-toggle" id="toggleEn" onclick="toggleIntro('en')">► Read more</button>
     <div class="kook-intro-content" id="introEn">
       <p>That shift puts me back in control of my habit instead of the other way around. Then I post a note on Nostr. This page tracks the new routine: outings, volume collected, and zaps received.</p>
@@ -515,8 +515,8 @@
       </div>
       <div class="kook-stat-card">
         <span class="kook-stat-value" id="statLiters">—</span>
-        <span class="kook-stat-label" data-lang-es="">🗑️ Bolsas recogidas (10 L)</span>
-        <span class="kook-stat-label" data-lang-en="">🗑️ Bags collected (2.5 gallon)</span>
+        <span class="kook-stat-label" data-lang-es="">💰 Bolsas recogidas (10 L)</span>
+        <span class="kook-stat-label" data-lang-en="">💰 Bags collected (2.5 gal/10l)</span>
       </div>
       <div class="kook-stat-card">
         <span class="kook-stat-value" id="statSats">—</span>
@@ -601,8 +601,8 @@
       <p data-lang-en="">Fork the code: <a href="https://github.com/bitcoinkook/sats-for-trash" target="_blank" rel="noopener">github.com/bitcoinkook/sats-for-trash</a> · Hashtag: <strong>#SatsForTrash</strong></p>
     </div>
 
-    <h2 data-lang-es="">🗑️ Que no falten bolsas ⚡</h2>
-    <h2 data-lang-en="">🗑️ Help keep the bags coming ⚡</h2>
+    <h2 data-lang-es="">💰 Que no falten bolsas ⚡</h2>
+    <h2 data-lang-en="">💰 Help keep the bags coming ⚡</h2>
     <div class="kook-support">
       <p data-lang-es="">Si quieres apoyar este proyecto, envía sats a:</p>
       <p data-lang-en="">If you'd like to support this project, send sats to:</p>
@@ -1018,7 +1018,7 @@ function render(lang) {
 
   document.getElementById("milestones").innerHTML=
     renderMilestone("🌅","Salidas","Outings",NOTES.length,HITOS.salidas,fmtNum,lang)+
-    renderMilestone("🗑️","Bolsas recogidas","Bags collected",totalBags,HITOS.bags,function(v){return fmtBolsas(v,lang);},lang)+
+    renderMilestone("💰","Bolsas recogidas","Bags collected",totalBags,HITOS.bags,function(v){return fmtBolsas(v,lang);},lang)+
     renderMilestone("⚡","Sats recibidos","Sats received",totalSatsAll,HITOS.sats,fmtSats,lang)+
     renderMilestone("👥","Zappers únicos","Unique zappers",zappersUnicos,HITOS.zappers,fmtNum,lang)+
     '<div class="kook-milestone">'+
@@ -1057,8 +1057,8 @@ function render(lang) {
   const last=ordenadas[0];
   const lastSats=totalSats(last), lastZappers=last.zaps.length;
   document.getElementById("lastNote").innerHTML=lang==="es"
-    ?"La última salida 🌅 (<strong>"+fmtFecha(last.date,"es")+"</strong>) recogió <strong>"+last.bags.toString().replace(".",",")+" bolsa"+(last.bags===1?"":"s")+" 🗑️</strong> y recibió <strong>"+fmtNum(lastSats)+" sats ⚡</strong> de <strong>"+lastZappers+" "+(lastZappers===1?"cuenta":"cuentas")+" 👥</strong>. <a href=\""+noteUrl(last.eventId)+"\" target=\"_blank\" rel=\"noopener\">Ver nota</a>"
-    :"Latest outing 🌅 (<strong>"+fmtFecha(last.date,"en")+"</strong>) collected <strong>"+last.bags.toString().replace(".",",")+" bag"+(last.bags===1?"":"s")+" 🗑️</strong> and received <strong>"+fmtNum(lastSats)+" sats ⚡</strong> from <strong>"+lastZappers+" "+(lastZappers===1?"account":"accounts")+" 👥</strong>. <a href=\""+noteUrl(last.eventId)+"\" target=\"_blank\" rel=\"noopener\">View note</a>";
+    ?"La última salida 🌅 (<strong>"+fmtFecha(last.date,"es")+"</strong>) recogió <strong>"+last.bags.toString().replace(".",",")+" bolsa"+(last.bags===1?"":"s")+" 💰</strong> y recibió <strong>"+fmtNum(lastSats)+" sats ⚡</strong> de <strong>"+lastZappers+" "+(lastZappers===1?"cuenta":"cuentas")+" 👥</strong>. <a href=\""+noteUrl(last.eventId)+"\" target=\"_blank\" rel=\"noopener\">Ver nota</a>"
+    :"Latest outing 🌅 (<strong>"+fmtFecha(last.date,"en")+"</strong>) collected <strong>"+last.bags.toString().replace(".",",")+" bag"+(last.bags===1?"":"s")+" 💰</strong> and received <strong>"+fmtNum(lastSats)+" sats ⚡</strong> from <strong>"+lastZappers+" "+(lastZappers===1?"account":"accounts")+" 👥</strong>. <a href=\""+noteUrl(last.eventId)+"\" target=\"_blank\" rel=\"noopener\">View note</a>";
 
   renderTabla(lang);
   renderRankings(lang);
