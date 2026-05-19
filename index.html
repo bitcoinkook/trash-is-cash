@@ -958,7 +958,7 @@ function render(lang) {
   NOTES.forEach(n=>n.zaps.forEach(z=>{ranking[z.npub]=(ranking[z.npub]||0)+z.sats;}));
   const zappersUnicos=Object.keys(ranking).length;
 
-  document.getElementById("statOutings").textContent=NOTES.length;
+  document.getElementById('statOutings').innerHTML = `${totalOutings} <span class="stat-emoji">🌅</span>`;
  document.getElementById("statLiters").textContent=(function(){
    const rounded=Math.round(totalBags*10)/10;
    return lang==="en"?rounded.toString():rounded.toString().replace(".",",");
